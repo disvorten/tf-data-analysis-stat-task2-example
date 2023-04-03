@@ -9,5 +9,5 @@ def solution(p: float, x: np.array) -> tuple:
     x_n = x.max()
     loc = 0.071
     left = x_n
-    right = loc + (x_n - loc) / (0.9 * alpha ** (1 / x.shape[0]))
+    right = loc + (x_n - loc) / (alpha ** (1 / x.shape[0]))
     return left, right
